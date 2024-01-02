@@ -1,0 +1,39 @@
+
+// THeme color value set Dark 
+:root {
+    --body: #0c0c35;
+    --txt-white: #fff;
+    --txt-black: #212529;
+    --grey-color: #2a4b62fc;
+    --txt-light: #565d6d;
+    --sub-head:#80dfcf;
+    // --primary-color: #0c0c35;
+    --primary-color: #6290e4;;
+    --secondary-color:linear-gradient(0deg, rgba(98,144,228,1) 0%, rgba(129,224,207,1) 62%);
+    // --secondary-color:#03f680e0;
+    --hover-color: #2a50f5;
+    --bg-main-color:#161e27;
+    --txt-shadow-full:0 0 2px #4c55bc, 0 0 5px #2715af, 0 0 5px #6c77c3, 0 0 5px #b05ade, 0 0 2px #8649c3, 4px 4px 2px #9a24ad;
+    --footer-link: rgba(213,237,255,.75);
+    --bg-gradient: linear-gradient(-45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 1px, transparent 1px, transparent 6px);
+
+
+    --dark_black:#040404;
+    --login_page:linear-gradient(45deg,   #010220 30%,#1a3b8b);
+    --login_border:#0a4efd;
+    --faq:#000410;
+    --bg-gradient-blue: linear-gradient(to right bottom,#f90cff,#e027ff,#c534ff,#a93eff,#8a44ff,#6560ff,#3c73ff,#0081ff,#009cff,#00b3ff,#00c6f5,#0cd7e8);
+    --footer-bg-color: #0c0c35;
+    --card-bg-color: linear-gradient(119deg, #03c7f6 0%, #0259d6 50%, rgb(21, 101, 178) 100%);
+    --card-bg-hover: linear-gradient(120deg, rgb(30 69 122 / 78%) 0%, rgb(1 169 244 / 75%) 50%, #03c7f6 100%);
+    --supported_banner:linear-gradient(95deg, #3d4779, #202048 );
+    --fee-banner:#101038;
+    --blue-different:#141446;
+
+    --dashboard_card_color: #1e1e25;
+    --dashboard_card_color2: #2D2D37;
+    
+
+    
+
+}

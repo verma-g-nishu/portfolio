@@ -1,0 +1,207 @@
+.login_main {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/bg1.jpeg);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-size: cover;
+        background-position: bottom;
+        // animation: slidein 100s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        background-repeat: no-repeat;
+
+        @keyframes slidein {
+            from {
+                background-position: top;
+
+            }
+
+            to {
+                background-position: -100px 0px;
+            }
+
+        }
+
+    }
+
+
+
+    .login_inner {
+        display: flex;
+        width: 100%;
+        margin: auto;
+
+        .left_sec {
+            padding: 0px;
+            position: relative;
+            z-index: 1;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+            @media ($breckpoint_MD) {
+                height: auto;
+                display: block;
+            }
+
+
+
+        }
+
+        .right_sec {
+
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 500px;
+            margin: 0 auto;
+
+            @media ($breckpoint_MD) {
+
+                width: 550px;
+                margin: auto;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+
+            @media($breckpoint_SM) {
+                width: 100%;
+            }
+
+            .login_form {
+                margin: 0 auto;
+                width: 500px;
+                padding: 20px;
+               
+                border-radius: 10px;
+              background: rgb(160 156 156 / 6%);
+                backdrop-filter: blur(10px);
+                border: 1px solid $primary-color;
+
+                @media ($breckpoint_XL) {
+                    width: 100%;
+                }
+
+                .login {
+                    padding: 20px 0px 0px 0px;
+                    text-align: center;
+
+                    a {
+                        text-decoration: none !important;
+                        padding: 8px 20px;
+                        background: $secondary-color;
+                        color: $txt-black;
+                        border-radius: 3px;
+                        width: fit-content;
+                    }
+
+                    p {
+                        margin: 15px 0px;
+                        color: $txt-black;
+
+                        .sign {
+                            text-decoration: none;
+                            background: none;
+                            padding-left: 5px;
+                            color: $primary-color;
+
+                        }
+                    }
+                }
+
+                .checkbox_style {
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 10px;
+
+                    .remember {
+                        margin-left: 10px;
+                    }
+
+                    .check {
+                        width: auto;
+                        margin: 0px;
+                    }
+                }
+
+                // .logo_sec {
+                //     text-align: center;
+                //     z-index: -1;
+                //     position: absolute;
+                //     top: -55px;
+                //     left: 40%;
+
+
+
+                //     img {
+                //         border-radius: 50%;
+                //         width: 100px;
+                //     }
+                // }
+
+                h1 {
+                    font-size: 35px;
+                    padding: 10px 0px;
+                    font-weight: 700;
+                    color: $txt-black ;
+                    text-align: center !important;
+
+                    @media ($breckpoint_LG) {
+                        font-size: 30px;
+                    }
+
+                    @media ($breckpoint_MD) {
+                        font-size: 25px;
+                    }
+
+                }
+
+                label {
+                    margin: 5px 0px;
+                    font-weight: 500;
+                    color: $txt-black;
+                }
+
+                .input_sec {
+                    width: 100%;
+                    padding: 5px 0px;
+                    border-bottom: 1px solid $primary-color !important;
+                    border: none;
+                    margin-bottom: 20px;
+                    background: transparent;
+                    backdrop-filter: blur(10px);
+                    color: $txt-white;
+
+                    &:-webkit-autofill {
+                        background-color: $txt-white;
+
+                        -webkit-text-fill-color:$txt-black;
+                        -webkit-box-shadow: 0 0 0px 1000px $txt-white inset !important;
+
+                    }
+
+                    &:focus {
+                        box-shadow: 0 0 0px 1000px $txt-white inset !important;
+                        background:$txt-white;
+
+                    }
+
+                    &:focus-visible {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.header_main{
+    background: $secondary-color;
+    .top_main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0px;
+        .link_sec{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: $bg-main-color;
+                    font-size: 17px;
+                    font-weight: 500;
+                }
+            }
+        }
+        .buttons{
+            display: flex;
+            gap: 15px;
+     
+        a{
+            text-decoration: none !important;
+            padding: 8px 20px;
+            background: $bg-main-color;
+            color: $primary-color;
+            border-radius: 3px;
+         
+        }
+    
+
+        }
+    }
+}
